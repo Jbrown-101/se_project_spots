@@ -1,10 +1,10 @@
 # Project 3: Spots
 
-An image sharing site
+- An image sharing site
 
 ## Project description
 
-This site built for image sharing. Bessies Coleman as an example, this is a profile with a description of herself with pictures uploaded that she might've taken of memories she had or photo's of places she wants to visit. You can edit your profile or add new posts. You can see this profile on different devices like mobile phone, tablet, laptop, and desktop. 
+- This site built for image sharing. Bessies Coleman as an example, this is a profile with a description of herself with pictures uploaded that she might've taken of memories she had or photo's of places she wants to visit. You can edit your profile or add new posts. You can see this profile on different devices like mobile phone, tablet, laptop, and desktop. 
 
 ## Tech Stack
 
@@ -16,7 +16,7 @@ This site built for image sharing. Bessies Coleman as an example, this is a prof
 
 This webpage is deployed to Github Pages
 
-- Deployment Link:
+- [Deployment Link](https://jbrown-101.github.io/se_project_spots/)
 
 
 ### Overview  
@@ -35,14 +35,14 @@ This project is made so all the elements are displayed correctly on popular scre
   
 **Images**  
 
-[Image 1](./images/pexels-kassandre-pedro-8639743%201(1).png)
+- [Image 1](./images/pexels-kassandre-pedro-8639743%201(1).png)
 
-[Image 2](./images/Mask%20group%20(2)(1).png)
+- [Image 2](./images/Mask%20group%20(2)(1).png)
 
 
  ## Project Pitch Video
  
- Check out [this video](ADD_LINK_HERE), where I describe my 
+- Check out [this video](ADD_LINK_HERE), where I describe my 
  project and some challenges I faced while building it.
 
 
