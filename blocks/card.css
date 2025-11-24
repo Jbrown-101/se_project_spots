@@ -51,4 +51,9 @@
   .card__image {
     height: 288px;
   }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 120%;
+  }
 }
