@@ -1,0 +1,108 @@
+.modal {
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 32px 50px;
+  position: relative;
+}
+
+.modal__close-btn {
+  background-image: url(../images/Close\ Icon.jpg);
+  position: absolute;
+  border: none;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  color: #212121b2;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+}
+
+.modal__input {
+  display: block;
+  margin: 8px 0 0;
+  width: 100%;
+  padding: 16px 12px;
+  gap: 10px;
+  border-radius: 8px;
+  border-color: #21212166;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
+}
+
+.modal__submit-btn {
+  max-width: 156px;
+  max-height: 52px;
+  padding: 18px 32px;
+  gap: 8px;
+  border-radius: 8px;
+  background: #212121;
+  color: #fcf5e5;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: none;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__submit-btn {
+    max-width: 100%;
+  }
+}
