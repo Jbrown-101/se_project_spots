@@ -47,6 +47,10 @@
   width: auto;
 }
 
+.profile__description:hover {
+  cursor: pointer;
+}
+
 .profile__edit-btn {
   display: flex;
   align-items: center;
@@ -104,7 +108,7 @@
     margin: 0 0 12px;
     width: 80px;
     height: 80px;
-    
+
   }
 
   .profile__name {
