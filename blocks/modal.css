@@ -81,6 +81,7 @@
   line-height: 100%;
   letter-spacing: 0;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .modal__input::placeholder {

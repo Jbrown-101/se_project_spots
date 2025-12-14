@@ -22,9 +22,19 @@ editProfileBtn.addEventListener("click", function () {
   editProfileModal.classList.add("modal_is-opened");
 });
 
+
+
 editProfileCloseBtn.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
+
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
 
 newPostBtn.addEventListener("click", function () {
   newPostModal.classList.add("modal_is-opened");
@@ -41,4 +51,17 @@ function handleProfileSubmit(evt) {
    editProfileModal.classList.remove("modal_is-opened");
 }
 
+function handleNewPostSubmit(evt) {
+  evt.preventDefault();
+   newPostModal.classList.remove("modal_is-opened");
+}
+
+
 editProfileForm.addEventListener("submit", handleProfileSubmit);
+newPostModal.addEventListener("submit",handleNewPostSubmit);
+
+
+
+editProfileCloseBtn.addEventListener("click", () => {
+  closeModal(editProfileModal);
+});
