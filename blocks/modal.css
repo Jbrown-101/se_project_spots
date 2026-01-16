@@ -9,9 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0 10px;
   opacity: 0;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition: visibility 0.5s linear 0.5s, opacity 0.5s linear;
+}
+
+.modal_type_preview {
+  padding: 0 16px;
 }
 
 .modal_is-opened {
@@ -31,17 +35,26 @@
 }
 
 .modal__close-btn {
-  background-image: url(../images/Close\ Icon.jpg);
-  position: absolute;
-  border: none;
-  top: 32px;
-  right: 50px;
   width: 40px;
   height: 40px;
-  opacity: 1;
+  top: 32px;
+  right: 50px;
+  background-image: url(../images/default-close.jpg);
+  background-size: 35px 35px;
+  position: absolute;
+  border: none;
   cursor: pointer;
+  opacity: 0.4;
 }
 
+.modal__close_type_preview {
+  top: 0;
+  right: -52.5px;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
 
 .modal__title {
   margin: 0 0 32px;
@@ -105,13 +118,37 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 627px) {
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.modal__caption {
+  background: #212121;
+  color: white;
+  margin: 0;
+  width: 158px;
+  opacity: 1;
+  border-radius: 8px;
+ padding: 4px 8px 4px 8px;
+}
+
+@media screen and (max-width: 480px) {
   .modal__container {
     padding: 22px 12px 12px;
   }
 
   .modal__title {
-     font-size: 20px;
+    font-size: 20px;
   }
 
   .modal__close-btn {
@@ -129,5 +166,16 @@
 
   .modal__submit-btn {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: unset;
   }
 }
