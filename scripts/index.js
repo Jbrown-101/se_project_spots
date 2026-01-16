@@ -1,4 +1,4 @@
-const initial = [
+const initialCards = [
   {
     name: "Golden Gate bridge",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
@@ -161,7 +161,7 @@ function getCardElement(data) {
   return cardElement;
 }
 
-initial.forEach(function (item) {
+initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
