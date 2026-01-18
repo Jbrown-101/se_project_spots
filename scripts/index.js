@@ -38,10 +38,10 @@ const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
 const editProfileNameInput = editProfileModal.querySelector(
-  "#profile-name-input"
+  "#profile-name-input",
 );
 const editProfileDescriptionInput = editProfileModal.querySelector(
-  "#profile-description-input"
+  "#profile-description-input",
 );
 
 editProfileBtn.addEventListener("click", function () {
@@ -64,29 +64,29 @@ function handleProfileSubmit(evt) {
 editProfileForm.addEventListener("submit", handleProfileSubmit);
 
 const newPostBtn = document.querySelector(".profile__add-btn");
-const newPostForm = document.querySelector("#new-post-modal");
-const newPostCloseBtn = newPostForm.querySelector(".modal__close-btn");
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostLinkEl = document.querySelector(".card__image");
 const newPostCaptionEl = document.querySelector(".card__title");
-const newPostLinkInput = newPostForm.querySelector("#card-image-input");
-const newPostCaptionInput = newPostForm.querySelector("#card-caption-input");
+const newPostLinkInput = newPostModal.querySelector("#card-image-input");
+const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(
-  ".modal__close-btn_type_preview"
+  ".modal__close-btn_type_preview",
 );
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaptionEl = previewModal.querySelector(".modal__caption");
 
 newPostBtn.addEventListener("click", function () {
-  openModal(newPostForm);
+  openModal(newPostModal);
 });
 
 newPostCloseBtn.addEventListener("click", function () {
-  closeModal(newPostForm);
+  closeModal(newPostModal);
 });
 
-newPostForm.addEventListener("submit", handleNewPostSubmit);
+newPostModal.addEventListener("submit", handleNewPostSubmit);
 
 previewModalCloseBtn.addEventListener("click", function () {
   closeModal(previewModal);
@@ -110,9 +110,10 @@ function handleNewPostSubmit(evt) {
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-   newPostForm.reset()
+  const newPostActualForm = newPostForm.querySelector(".modal__form");
+  newPostForm.reset();
 
-  closeModal(newPostForm);
+  closeModal(newPostModal);
 }
 
 const cardTemplate = document
