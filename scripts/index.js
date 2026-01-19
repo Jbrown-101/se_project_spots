@@ -100,6 +100,8 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
+ const newPostForm = newPostModal.querySelector(".modal__form");
+
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
 
@@ -110,7 +112,6 @@ function handleNewPostSubmit(evt) {
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-  const newPostActualForm = newPostForm.querySelector(".modal__form");
   newPostForm.reset();
 
   closeModal(newPostModal);
