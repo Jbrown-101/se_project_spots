@@ -42,7 +42,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
  ## Project Pitch Video
  
-- Check out [this video](ADD_LINK_HERE), where I describe my 
+- Check out [this video](https://www.loom.com/share/41cb36f8302c4e45935e32c9ee96e682), where I describe my 
  project and some challenges I faced while building it.
 
 
