@@ -122,10 +122,14 @@
 }
 
 .modal__error {
-  display: block;
+  display: none;
   margin-top: 8px;
   font-size: 16px;
   color: rgba(255, 0, 0, 0.6);
+}
+
+.modal__error_visible {
+  display: block;
 }
 
 .modal__submit-btn {

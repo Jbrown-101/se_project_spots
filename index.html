@@ -53,7 +53,7 @@
       </footer>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button type="button" class="modal__close-btn modal__close-btn_type_preview"></button>
           <h2 class="modal__title">Edit profile</h2>
           <form class="modal__form" novalidate>
             <label for="profile-name-input" class="modal__label">
@@ -67,7 +67,7 @@
                 maxlength="40"
                 required
               />
-              <span class="modal__error" id="name-error"></span>
+              <span class="modal__error" id="name-input-error"></span>
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
@@ -91,7 +91,7 @@
       </div>
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button type="button" class="modal__close-btn modal__close-btn_type_preview"></button>
           <h2 class="modal__title">New post</h2>
           <form class="modal__form">
             <label for="card-image-input" class="modal__label">
