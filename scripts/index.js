@@ -96,7 +96,6 @@ newPostModal.addEventListener("submit", handleNewPostSubmit);
 
 previewModalCloseBtn.addEventListener("click", function () {
   closeModal(previewModal);
-  debugger;
 });
 
 function handleEscape(evt) {
