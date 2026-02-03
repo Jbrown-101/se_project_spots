@@ -79,8 +79,9 @@ const newPostLinkInput = newPostModal.querySelector("#card-image-input");
 const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const previewModal = document.querySelector("#preview-modal");
-const previewModalCloseBtn = previewModal.querySelector('.modal__close-btn');
+const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
+const newPostSubmitBtn = newPostModal.querySelector('.modal__submit-btn');
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaptionEl = previewModal.querySelector(".modal__caption");
 
