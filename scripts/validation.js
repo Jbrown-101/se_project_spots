@@ -29,7 +29,7 @@ const checkInputValidity = (formEl, inputEl, config) => {
   }
 };
 
-const hasInvalidInput = (inputList, config) => {
+const hasInvalidInput = (inputList) => {
   return inputList.some((input) => {
     return !input.validity.valid;
   });
